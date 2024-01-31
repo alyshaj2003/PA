@@ -1,0 +1,16 @@
+# Alysha Johnson, sqt6hx
+
+
+def user_age ():
+    global total_sum
+    user_number = input("Pick a number between 1 and 10: ")
+    alr_birth_year = input("If you've already had a birthday this year, enter 1773. Otherwise, enter 1772: ")
+    r_birth_year = input("Enter the year that you were born: ")
+    b_year = int(alr_birth_year)
+    total_sum = int(user_number)
+    u_birth_year = int(r_birth_year)
+    magic_number = ((((total_sum*2)+5)*50)+int(alr_birth_year))-int(u_birth_year)
+    print("The magic number is", "\"", magic_number,"\"", "That means you are!",magic_number%100)
+
+
+user_age()
